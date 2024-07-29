@@ -58,7 +58,7 @@ function setCouple() {
 
 function applyCouple() {
   for (let couple of couples) {
-    if (Math.random() < 0.6) {
+    if (Math.random() < 0.2) {
       let index = Math.floor(Math.random() * (students.length + 1));
       students.splice(index, 0, ...couple);
     } else {
