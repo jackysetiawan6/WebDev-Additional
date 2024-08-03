@@ -76,7 +76,6 @@ button.addEventListener("click", () => {
   let starter = desks.findIndex((desk) => desk.id === "starter");
   curriculum.forEach((name) => {
     let index = students.findIndex((student) => student === name);
-    console.log(index, name);
     if (index > -1) students.splice(index, 1);
     desks[starter].classList.add("skip");
     desks[starter].textContent = name;
