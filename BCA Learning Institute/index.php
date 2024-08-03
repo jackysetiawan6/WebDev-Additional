@@ -44,10 +44,10 @@
             <li class="nav-item"><a href="login.php" class="nav-link primary fw-semibold">Login</a></li>
         </ul>
     </header>
-    <div class="container-flex">
-        <div class="banner z-n1" style="position: relative; height: 450px; width: 100%; overflow: hidden;">
-            <img src="assets/banner-bca.jpg" class="img w-100 h-100 object-fit-cover" alt="BCA Learning Institute">
-        </div>
+    <div class="banner z-n1" style="position: relative; height: 450px; width: 100%; overflow: hidden;">
+        <img src="assets/banner-bca.jpg" class="img w-100 h-100 object-fit-cover" alt="BCA Learning Institute">
+    </div>
+    <div class="container">
         <div class="search-header bg-white mx-5 px-4 py-3 shadow rounded-3" style="margin-top: -45px;">
             <form action="search.php" method="GET" class="search w-100" style="display: grid; gap: 1rem; grid-template-columns: 1fr 1fr 1fr 60px;">
                 <div>
@@ -75,6 +75,8 @@
                 </button>
             </form>
         </div>
+    </div>
+    <div class="container-flex">
         <div class="m-5 d-grid" style="grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); gap: 2rem;">
             <?php
             for ($i = 1; $i <= 20; $i++) {

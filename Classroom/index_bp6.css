@@ -27,6 +27,7 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
+  position: relative;
 }
 .whiteboard {
   height: 40px;
@@ -43,7 +44,9 @@
   border-radius: 10px;
   border: none;
   outline: none;
-  margin-left: 145px;
+  position: absolute;
+  top: 65px;
+  right: 145px;
 }
 .container-desk {
   height: fit-content;
@@ -70,6 +73,10 @@
   border-radius: 10px;
   border: none;
   outline: none;
+}
+.skip {
+  color: #000000;
+  background-color: gold;
 }
 .hide {
   opacity: 0;

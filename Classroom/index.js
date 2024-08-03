@@ -43,6 +43,9 @@ let couples = [
   ["Matthew", "Jesslyn"],
 ];
 
+const button = document.getElementById("start-button");
+const desks = document.querySelectorAll(".desk");
+
 function setCouple() {
   for (let couple of couples) {
     let randomCouple = couple.slice().sort(() => Math.random() - 0.5);
@@ -74,14 +77,14 @@ function applyCouple() {
 }
 
 function randomize() {
-  setCouple();
+  // setCouple();
   for (let i = students.length - 1; i > 0; i--) {
     let j = Math.floor(Math.random() * (i + 1));
     let temp = students[i];
     students[i] = students[j];
     students[j] = temp;
   }
-  applyCouple();
+  // applyCouple();
 }
 
 function setPosition() {
@@ -93,11 +96,6 @@ function setPosition() {
     number++;
   });
 }
-
-console.log(students);
-
-const button = document.getElementById("start-button");
-const desks = document.querySelectorAll(".desk");
 
 button.addEventListener("click", () => {
   if (button.classList.contains("active")) return;
